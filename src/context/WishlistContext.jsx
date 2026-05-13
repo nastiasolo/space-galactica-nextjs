@@ -1,10 +1,15 @@
 "use client";
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
-export const WishlistContext = createContext();
+export const WishlistContext = createContext({});
 
 export const WishlistProvider = ({ children }) => {
   const [planetsWishlist, setPlanetsWishlist] = useState([]);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("wishlist");
+    if (saved) setPlanetsWishlist(JSON.parse(saved));
+  }, []);
 
   const addPlanetToWishlist = (planet) => {
     setPlanetsWishlist((prev) => {
