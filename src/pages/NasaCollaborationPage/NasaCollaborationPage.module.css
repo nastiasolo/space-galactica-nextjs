@@ -1,0 +1,16 @@
+.app {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.nasaPicOfTheDayImg {
+  width: auto;
+  height: 400px;
+}
+
+.roverContainer {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
