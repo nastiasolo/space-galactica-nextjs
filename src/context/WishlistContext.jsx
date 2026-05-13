@@ -7,11 +7,22 @@ export const WishlistProvider = ({ children }) => {
   const [planetsWishlist, setPlanetsWishlist] = useState([]);
 
   const addPlanetToWishlist = (planet) => {
-    setPlanetsWishlist([...planetsWishlist, planet]);
+    setPlanetsWishlist((prev) => {
+      const existsById = prev.some((p) => p.id === planet.id);
+
+      const existsByName = prev.some((p) => p.name === planet.name);
+
+      if (existsById || existsByName) {
+        console.log("Planet already on the list");
+        return prev;
+      }
+
+      return [...prev, planet];
+    });
   };
 
-  const removePlanetFromWishlist = (name) => {
-    setPlanetsWishlist(planetsWishlist.filter((p) => p.name !== name));
+  const removePlanetFromWishlist = (id) => {
+    setPlanetsWishlist((prev) => prev.filter((p) => p.id !== id));
   };
 
   const isPlanetInWishlist = (name) => {

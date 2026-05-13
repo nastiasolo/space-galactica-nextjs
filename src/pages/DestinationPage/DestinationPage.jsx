@@ -18,9 +18,15 @@ export const Destinations = () => {
 
   const togglePlanetSelection = (planet) => {
     isPlanetInWishlist(planet.name)
-      ? removePlanetFromWishlist(planet.name)
+      ? removePlanetFromWishlist(planet.id)
       : addPlanetToWishlist(planet);
   };
+
+  const nextId =
+    Math.max(
+      ...planetsList.map((p) => p.id),
+      ...planetsWishlist.map((p) => p.id),
+    ) + 1;
 
   return (
     <div className="fullBGpicture">
@@ -35,7 +41,7 @@ export const Destinations = () => {
           )}
           <AddWishlistItem
             onAddWishlistItem={addPlanetToWishlist}
-            nextId={wishlistCount + 1}
+            nextId={nextId}
           />
           <h3>Your current wishlist</h3>
           <div className={styles.wishlistList}>
@@ -43,7 +49,7 @@ export const Destinations = () => {
               <PlanetsWishlistItem
                 key={planet.id}
                 {...planet}
-                onRemove={() => removePlanetFromWishlist(planet.name)}
+                onRemove={() => removePlanetFromWishlist(planet.id)}
               />
             ))}
           </div>
