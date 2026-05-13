@@ -3,9 +3,9 @@ import { useContext } from "react";
 import styles from "./DestinationPage.module.css";
 import { PlanetsWishlistItem } from "./PlanetsWishlistItem";
 import { PlanetCard } from "./PlanetCard";
-import { planetsList } from "../../../data/planets";
+import { planetsList } from "../../../../data/planets";
 import { AddWishlistItem } from "./AddWishlistItem";
-import { WishlistContext } from "../../context/WishlistContext";
+import { WishlistContext } from "../../../context/WishlistContext";
 
 export const Destinations = () => {
   const {

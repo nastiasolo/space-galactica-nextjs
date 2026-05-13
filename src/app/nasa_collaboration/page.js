@@ -1,4 +1,4 @@
-import NasaCollaboration from "../../pages/NasaCollaborationPage/NasaCollaborationPage";
+import NasaCollaboration from "../../components/pages/NasaCollaborationPage/NasaCollaborationPage";
 
 export default function Page() {
   return <NasaCollaboration />;

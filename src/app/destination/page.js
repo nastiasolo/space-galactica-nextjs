@@ -1,5 +1,5 @@
 "use client";
-import Destinations from "../../pages/DestinationPage/DestinationPage";
+import Destinations from "../../components/pages/DestinationPage/DestinationPage";
 
 export default function Page() {
   return <Destinations />;
