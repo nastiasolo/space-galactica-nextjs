@@ -1,5 +1,6 @@
-import AboutUsPage from "../../pages/AboutUsPage/AboutUsPage";
+"use client";
+import Crew from "../../pages/AboutUsPage/AboutUsPage";
 
 export default function Page() {
-  return <AboutUsPage />;
+  return <Crew />;
 }

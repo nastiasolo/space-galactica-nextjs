@@ -1,5 +1,5 @@
-import NasaCollaborationPage from "../../pages/NasaCollaborationPage/NasaCollaborationPage";
+import NasaCollaboration from "../../pages/NasaCollaborationPage/NasaCollaborationPage";
 
 export default function Page() {
-  return <NasaCollaborationPage />;
+  return <NasaCollaboration />;
 }
