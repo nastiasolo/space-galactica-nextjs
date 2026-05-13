@@ -9,3 +9,5 @@ export const RoverPhoto = ({ src, date, roverName }) => {
     </div>
   );
 };
+
+export default RoverPhoto;

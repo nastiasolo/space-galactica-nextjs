@@ -25,3 +25,5 @@ export const PlanetCard = ({
     </div>
   );
 };
+
+export default PlanetCard;

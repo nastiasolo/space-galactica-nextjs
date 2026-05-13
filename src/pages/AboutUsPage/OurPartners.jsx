@@ -61,3 +61,5 @@ export const OurPartners = () => {
     </>
   );
 };
+
+export default OurPartners;

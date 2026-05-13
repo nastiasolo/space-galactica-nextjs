@@ -9,3 +9,5 @@ export const PlanetsWishlistItem = ({ name, thumbnail, onRemove }) => {
     </div>
   );
 };
+
+export default PlanetsWishlistItem;

@@ -48,3 +48,5 @@ export const AddWishlistItem = ({ onAddWishlistItem, nextId }) => {
     </div>
   );
 };
+
+export default AddWishlistItem;
