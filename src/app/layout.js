@@ -1,6 +1,7 @@
 import "./globals.css";
 import { WishlistProvider } from "@/context/WishlistContext";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { Inter } from "next/font/google";
 
 export const metadata = {

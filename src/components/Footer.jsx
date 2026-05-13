@@ -1,13 +1,13 @@
-// import { useLocation } from "react-router-dom";
+"use client";
 import styles from "./Footer.module.css";
 import { SocialMediaItem } from "./SocialMediaItem";
-// import { Link } from "react-router-dom";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { navbarItems } from "../../data/navigation";
 import { socialMedia } from "../../data/socialmedia";
 
 export const Footer = () => {
-  const { pathname } = useLocation();
+  const pathname = usePathname();
 
   return (
     <footer className={pathname !== "/" ? styles.footer : styles.hidden}>
@@ -24,7 +24,7 @@ export const Footer = () => {
         <ul className={styles.footerList}>
           {navbarItems.map((item) => (
             <li key={item.id}>
-              <Link to={item.link}>
+              <Link href={item.link}>
                 <b>{item.id}</b> {item.title}
               </Link>
             </li>

@@ -4,7 +4,6 @@ import styles from "./page.module.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import Layout from "../components/Layout.jsx";
 import HomePage from "../pages/HomePage/HomePage.jsx";
 import DestinationPage from "../pages/DestinationPage/DestinationPage.jsx";
 import AboutUsPage from "../pages/AboutUsPage/AboutUsPage.jsx";
