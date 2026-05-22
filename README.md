@@ -36,4 +36,4 @@ Moving the project to Next.js was done to boost performance, optimize SEO, and i
 *   **NASA Collaboration:** A dedicated dashboard layout prepared for tracking outer-space data and rover photograph elements fetched from NASA API.
 
 ---
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen?style=for-the-badge&logo=vercel)](https://space-galactica-nextjs-8gj556bu5-anastasias-projects-dd377324.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen?style=for-the-badge&logo=vercel)](https://space-galactica-nextjs.vercel.app/)
